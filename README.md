@@ -10,10 +10,23 @@ Editer dans files/ les scripts python, pour ajouter les liens des webhooks matte
 Inventory
 =========
 ```
-[bastions]
+[bastion:children]
+HorsProd
+Prod
+
+[HorsProd]
 bastion-4.9
+
+[Prod]
 bastion-4.7
-...
+```
+
+Variables
+=========
+créer dans les group_vars les fichiers Prod.yaml et HorsProd.yaml dans lequel vous positionnerez l'url de webhook:
+
+```
+mattermost_webhook="..."
 ```
 
 Playbook
