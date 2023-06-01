@@ -6,7 +6,7 @@ import json
 import shlex
 import requests 
 
-mmwebhooks=""
+mmwebhooks="{{mattermost_webhook}}"
 
 os.chdir (os.path.dirname(sys.argv[0]))
 
