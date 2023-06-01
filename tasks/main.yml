@@ -1,0 +1,17 @@
+- name: copy prod check-oc.py to /usr/local/bin/
+  copy:
+    src: check-oc-prod.py
+    dest: /usr/local/bin/check-oc.py
+    owner: root
+    group: root
+    mode: 0755
+  when: "'Prod' is in group_names"
+
+- name: copy horsprod check-co.py to /usr/local/bin/
+  copy:
+    src: check-oc-horsprod.py
+    dest: /usr/local/bin/check-oc.py
+    owner: root
+    group: root
+    mode: 0755
+  when: "'HorsProd' is in group_names"
