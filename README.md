@@ -5,6 +5,8 @@ cd roles
 git clone https://github.com/pvalois/check_oc.git
 ```
 
+Editer dans files/ les scripts python, pour ajouter les liens des webhooks mattermost.
+
 Inventory
 =========
 ```
