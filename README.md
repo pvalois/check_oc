@@ -10,7 +10,7 @@ Editer dans files/ les scripts python, pour ajouter les liens des webhooks matte
 Inventory
 =========
 ```
-[bastion:children]
+[bastions:children]
 HorsProd
 Prod
 
